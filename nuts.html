@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section>
-  <div class="participants medium">
+  <div class="participants fast">
     {% assign length   = site.data.nuts | size %}
     {% assign shuffled = site.data.nuts | sample:length %}
     <div class="part1">
@@ -18,7 +18,7 @@ layout: default
     </div>
   </div>
 
-  <div class="participants fast reverse">
+  <div class="participants medium reverse">
     {% assign length   = site.data.nuts | size %}
     {% assign shuffled = site.data.nuts | sample:length %}
     <div class="part1">

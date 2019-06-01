@@ -48,10 +48,10 @@ section {
 
   &.slow {
     .part1, .part2 {
-      animation-duration: 120s;
+      animation-duration: 140s;
     }
     .part2 {
-      animation-delay: -60s;
+      animation-delay: -70s;
     }
   }
   &.medium {
@@ -64,10 +64,10 @@ section {
   }
   &.fast {
     .part1, .part2 {
-      animation-duration: 100s;
+      animation-duration: 80s;
     }
     .part2 {
-      animation-delay: -50s;
+      animation-delay: -40s;
     }
   }
 

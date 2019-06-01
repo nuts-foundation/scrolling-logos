@@ -1,0 +1,81 @@
+section {
+  width: max-content;
+}
+
+.participants {
+  position: relative;
+  margin: 10vh 0;
+  white-space: nowrap;
+  width: max-content;
+  height: 20vh;
+
+  .part1, .part2 {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: max-content;
+    top: 0;
+    left: 100vw;
+
+    animation-name: marquee;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    @keyframes marquee {
+      0%   { left: 100%; }
+      100% { left: -100%; }
+    }
+
+    .participant {
+      display: inline-block;
+      width: 30vh;
+      height: 100%;
+      margin: 0 7vh;
+      padding: 0;
+
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .part2 {
+    position: absolute;
+  }
+
+  // Speeds
+
+  &.slow {
+    .part1, .part2 {
+      animation-duration: 120s;
+    }
+    .part2 {
+      animation-delay: -60s;
+    }
+  }
+  &.medium {
+    .part1, .part2 {
+      animation-duration: 110s;
+    }
+    .part2 {
+      animation-delay: -55s;
+    }
+  }
+  &.fast {
+    .part1, .part2 {
+      animation-duration: 100s;
+    }
+    .part2 {
+      animation-delay: -50s;
+    }
+  }
+
+  // Direction
+
+  &.reverse {
+    .part1, .part2 {
+      animation-direction: reverse;
+    }
+  }
+
+}

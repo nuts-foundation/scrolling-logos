@@ -2,47 +2,49 @@
 layout: default
 ---
 
-<div class="participants medium">
-  {% assign length   = site.data.nuts | size %}
-  {% assign shuffled = site.data.nuts | sample:length %}
-  <div class="part1">
-    {% for participant in shuffled %}
-      <div class="participant" style="background-image: url('{{participant.image_url}}');"></div>
-    {% endfor %}
+<section>
+  <div class="participants medium">
+    {% assign length   = site.data.nuts | size %}
+    {% assign shuffled = site.data.nuts | sample:length %}
+    <div class="part1">
+      {% for participant in shuffled %}
+        <div class="participant" style="background-image: url('{{participant.image_url}}');"></div>
+      {% endfor %}
+    </div>
+    <div class="part2">
+      {% for participant in shuffled %}
+        <div class="participant" style="background-image: url('{{participant.image_url}}');"></div>
+      {% endfor %}
+    </div>
   </div>
-  <div class="part2">
-    {% for participant in shuffled %}
-      <div class="participant" style="background-image: url('{{participant.image_url}}');"></div>
-    {% endfor %}
-  </div>
-</div>
 
-<div class="participants fast reverse">
-  {% assign length   = site.data.nuts | size %}
-  {% assign shuffled = site.data.nuts | sample:length %}
-  <div class="part1">
-    {% for participant in shuffled %}
-      <div class="participant" style="background-image: url('{{participant.image_url}}');"></div>
-    {% endfor %}
+  <div class="participants fast reverse">
+    {% assign length   = site.data.nuts | size %}
+    {% assign shuffled = site.data.nuts | sample:length %}
+    <div class="part1">
+      {% for participant in shuffled %}
+        <div class="participant" style="background-image: url('{{participant.image_url}}');"></div>
+      {% endfor %}
+    </div>
+    <div class="part2">
+      {% for participant in shuffled %}
+        <div class="participant" style="background-image: url('{{participant.image_url}}');"></div>
+      {% endfor %}
+    </div>
   </div>
-  <div class="part2">
-    {% for participant in shuffled %}
-      <div class="participant" style="background-image: url('{{participant.image_url}}');"></div>
-    {% endfor %}
-  </div>
-</div>
 
-<div class="participants slow">
-  {% assign length   = site.data.nuts | size %}
-  {% assign shuffled = site.data.nuts | sample:length %}
-  <div class="part1">
-    {% for participant in shuffled %}
-      <div class="participant" style="background-image: url('{{participant.image_url}}');"></div>
-    {% endfor %}
+  <div class="participants slow">
+    {% assign length   = site.data.nuts | size %}
+    {% assign shuffled = site.data.nuts | sample:length %}
+    <div class="part1">
+      {% for participant in shuffled %}
+        <div class="participant" style="background-image: url('{{participant.image_url}}');"></div>
+      {% endfor %}
+    </div>
+    <div class="part2">
+      {% for participant in shuffled %}
+        <div class="participant" style="background-image: url('{{participant.image_url}}');"></div>
+      {% endfor %}
+    </div>
   </div>
-  <div class="part2">
-    {% for participant in shuffled %}
-      <div class="participant" style="background-image: url('{{participant.image_url}}');"></div>
-    {% endfor %}
-  </div>
-</div>
+</section>

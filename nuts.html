@@ -4,8 +4,8 @@ layout: default
 
 <section>
   <div class="participants fast">
-    {% assign length   = site.data.nuts | size %}
-    {% assign shuffled = site.data.nuts | sample:length %}
+    {% assign length   = site.data.participants | size %}
+    {% assign shuffled = site.data.participants | sample:length %}
     <div class="part1">
       {% for participant in shuffled %}
         <div class="participant" style="background-image: url('{{participant.image_url}}');"></div>
@@ -19,8 +19,8 @@ layout: default
   </div>
 
   <div class="participants medium reverse">
-    {% assign length   = site.data.nuts | size %}
-    {% assign shuffled = site.data.nuts | sample:length %}
+    {% assign length   = site.data.participants | size %}
+    {% assign shuffled = site.data.participants | sample:length %}
     <div class="part1">
       {% for participant in shuffled %}
         <div class="participant" style="background-image: url('{{participant.image_url}}');"></div>
@@ -34,8 +34,8 @@ layout: default
   </div>
 
   <div class="participants slow">
-    {% assign length   = site.data.nuts | size %}
-    {% assign shuffled = site.data.nuts | sample:length %}
+    {% assign length   = site.data.participants | size %}
+    {% assign shuffled = site.data.participants | sample:length %}
     <div class="part1">
       {% for participant in shuffled %}
         <div class="participant" style="background-image: url('{{participant.image_url}}');"></div>
